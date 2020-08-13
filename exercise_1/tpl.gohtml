@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Exercise 1</title>
+</head>
+<body>
+    ============================================
+{{range .}}
+    <p>{{.Name}} Region</p>
+    ============================================
+    {{range .Hotels}}
+        <p>Name: {{.Name}}</p>
+        <p>Address: {{.Address}}</p>
+        <p>City: {{.City}}</p>
+        <p>Zip: {{.Zip}}</p>
+
+    {{end}}
+    ============================================
+{{end}}
+</body>
+</html>

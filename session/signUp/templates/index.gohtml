@@ -1,0 +1,17 @@
+<html>
+<head>
+    {{template "header"}}
+</head>
+<body>
+    
+    {{if .}}
+        <h1>First Name: {{.FirstName}}</h1>
+        <h1>Last Name: {{.LastName}}</h1>
+        <h1>User Name: {{.UserName}}</h1>
+    {{end}}
+    <br/>
+    <h2>Go to <a href="/show">Form Page</a></h2>
+    <h2>Go to <a href="/signup">Signup Page</a></h2>
+    {{template "footer"}}
+</body>
+</html>

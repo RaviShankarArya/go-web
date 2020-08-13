@@ -1,0 +1,17 @@
+<html>
+<head>
+    {{template "header"}}
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="q"/><br/><br/>
+        <input type="Submit"/><br/><br/>
+    </form>
+
+    {{if .}}
+        <p>Here is the content of file:</p>
+        {{.}}
+    {{end}}
+    {{template "footer"}}
+</body>
+</html>

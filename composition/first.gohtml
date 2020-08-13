@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Composition</title>
+</head>
+<body>
+
+{{.Fall.Term}}<br/>
+{{range .Fall.Courses}}
+    {{.Name}} - {{.Number}} - {{.Units}}
+{{end}}
+<br/>
+{{.Spring.Term}}<br/>
+{{range .Spring.Courses}}
+    {{.Name}} - {{.Number}} - {{.Units}}
+{{end}}
+<br/>
+{{.Summer.Term}}<br/>
+{{range .Summer.Courses}}
+    {{.Name}} - {{.Number}} - {{.Units}}
+{{end}}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<head>
+    {{template "header"}}
+</head>
+<body>
+    <form method="POST">
+        <label>First Name:</label>
+        <input type="text" name="firstName"/><br/><br/>
+        <label>Last Name:</label>
+        <input type="text" name="lastName"/><br/><br/>
+        <label>User Name:</label>
+        <input type="text" name="userName"/><br/><br/>
+        <label>Password:</label>
+        <input type="text" name="password"/><br/><br/>
+        <input type="Submit"/><br/><br/>       
+    </form>
+    {{.}}
+    <h1>First Name: {{.FirstName}}</h1>
+    <h1>Last Name: {{.LastName}}</h1>
+    <h1>User Name: {{.UserName}}</h1>
+    <h1>Password: {{.Password}}</h1>
+    <br/>
+    {{template "footer"}}
+</body>
+</html>
